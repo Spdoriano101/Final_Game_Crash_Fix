@@ -8,11 +8,16 @@ public class Character_Button : MonoBehaviour {
     public static string characterChoice = "";
 
     public string sceneToLoad = "";
-    
+
+   
+
     public void SelectCharacter(string chosenCharacter)
     {
         characterChoice = chosenCharacter;
 
+        PlayerPrefs.DeleteKey("score");
+
         SceneManager.LoadScene(sceneToLoad);
+
     }
 }

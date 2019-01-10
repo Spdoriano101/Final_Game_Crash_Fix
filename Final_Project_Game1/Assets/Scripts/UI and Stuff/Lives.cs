@@ -15,7 +15,7 @@ public class Lives : MonoBehaviour
     void Start()
     {
 
-        numericalLives = PlayerPrefs.GetInt("Lives", 3);
+        numericalLives = PlayerPrefs.GetInt("Lives", 3);    // -- issue with lives for dom, resets back to 3 when the game is restared after he dies from an enemy
 
         livesText.text = numericalLives.ToString();
     }

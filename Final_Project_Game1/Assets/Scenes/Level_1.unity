@@ -9623,13 +9623,14 @@ Prefab:
     - target: {fileID: 212517210150213544, guid: 8011399900e4a52489c533f3e6524623,
         type: 2}
       propertyPath: m_SortingLayer
-      value: -2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1780540419874712, guid: 8011399900e4a52489c533f3e6524623, type: 2}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114869086497665602, guid: 8011399900e4a52489c533f3e6524623, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8011399900e4a52489c533f3e6524623, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1242731191 stripped
@@ -9659,7 +9660,7 @@ GameObject:
   - component: {fileID: 1318996458}
   - component: {fileID: 1318996457}
   - component: {fileID: 1318996456}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9748,7 +9749,7 @@ GameObject:
   - component: {fileID: 1424169936}
   - component: {fileID: 1424169935}
   - component: {fileID: 1424169934}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}

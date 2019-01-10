@@ -114,6 +114,7 @@ MonoBehaviour:
   physicsBody: {fileID: 50469284202682084}
   horizontalAxis: Horizontal
   jumpButton: Jump
+  defaultCharacter: 0
   playerAnimator: {fileID: 95588491326777250}
   playerSprite: {fileID: 212517210150213544}
   playerCollider: {fileID: 70743616295221510}

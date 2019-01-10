@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
 
                 Score.scoreValue = PlayerPrefs.GetInt("score", 0);
 
+
                 Scene currentLevel = SceneManager.GetActiveScene();
 
                 //Second, tell unity to load the current again

@@ -13,7 +13,7 @@ public class Home_Button : MonoBehaviour
     public void StartGame()
     {
         //Reset the score
-        PlayerPrefs.DeleteKey("score");
+        
 
         PlayerPrefs.DeleteKey("lives");
 
