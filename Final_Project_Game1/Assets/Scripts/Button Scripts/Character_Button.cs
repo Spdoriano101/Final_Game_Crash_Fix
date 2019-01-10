@@ -15,8 +15,6 @@ public class Character_Button : MonoBehaviour {
     {
         characterChoice = chosenCharacter;
 
-        PlayerPrefs.DeleteKey("score");
-
         SceneManager.LoadScene(sceneToLoad);
 
     }
