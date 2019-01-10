@@ -7582,6 +7582,7 @@ GameObject:
   - component: {fileID: 1961308781}
   - component: {fileID: 1961308779}
   - component: {fileID: 1961308780}
+  - component: {fileID: 1961308783}
   m_Layer: 0
   m_Name: Door-1.png
   m_TagString: Untagged
@@ -7693,6 +7694,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1961308783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961308778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6837a5ccee645844f8b128291230c532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreObject: {fileID: 1424169934}
+  sceneToLoad: Winner
 --- !u!1 &2097985170
 GameObject:
   m_ObjectHideFlags: 0
