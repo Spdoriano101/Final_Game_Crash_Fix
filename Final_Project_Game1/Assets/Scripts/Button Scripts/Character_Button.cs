@@ -13,6 +13,10 @@ public class Character_Button : MonoBehaviour {
 
     public void SelectCharacter(string chosenCharacter)
     {
+
+        PlayerPrefs.DeleteKey("Lives2");
+        Score.ResetScore();
+
         characterChoice = chosenCharacter;
 
         SceneManager.LoadScene(sceneToLoad);

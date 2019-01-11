@@ -15,8 +15,6 @@ public class Home_Button : MonoBehaviour
         //Reset the score
         
 
-        PlayerPrefs.DeleteKey("lives");
-
         SceneManager.LoadScene("Start_Menu");
     }
 }

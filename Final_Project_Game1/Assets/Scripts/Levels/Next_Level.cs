@@ -11,6 +11,8 @@ public class Next_Level : MonoBehaviour {
     //Designer Variables
     public string sceneToLoad;
 
+    public Score scoreObject;
+
     // Unity cals this function automatically
     // when our spikes touch any other object
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,7 +30,8 @@ public class Next_Level : MonoBehaviour {
 
             // We DID hit the player!
 
-           
+
+            scoreObject.SaveScore();
 
             // load next level
             SceneManager.LoadScene(sceneToLoad);

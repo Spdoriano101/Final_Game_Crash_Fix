@@ -17,6 +17,8 @@ public class Score : MonoBehaviour {
         //Give the value to the "Text"
         score = GetComponent<Text>();
 
+        scoreValue = PlayerPrefs.GetInt("score", 0);
+
 
     }
 
@@ -34,7 +36,12 @@ public class Score : MonoBehaviour {
     {
 
         PlayerPrefs.SetInt("score", scoreValue);
-
+        PlayerPrefs.Save();
+    }
+    
+    public static void ResetScore()
+    {
+        PlayerPrefs.DeleteKey("score");
     }
 
 }

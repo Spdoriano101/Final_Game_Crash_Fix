@@ -15,14 +15,13 @@ public class Player : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
 
-
-
-    //basicly if characterChoice == true, then it's selecting our character if defaultCharacter == true;
-    public bool defaultCharacter;
+  
 
     public Animator playerAnimator;
     public SpriteRenderer playerSprite;
     public Collider2D playerCollider;
+
+    public AudioSource Death;
 
     public Lives livesObject;
 
@@ -36,6 +35,7 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
 
+        Death = GetComponent<AudioSource>();
     }
 
 
@@ -100,7 +100,8 @@ public class Player : MonoBehaviour
 
     }
 
-
+   
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Check the thing we bump into is an enemy
@@ -110,7 +111,7 @@ public class Player : MonoBehaviour
             livesObject.LoseLife();
             livesObject.saveLives();
 
-            
+            Death.Play();
 
 
             //Check if its game over
@@ -146,7 +147,7 @@ public class Player : MonoBehaviour
 
                 //Second, tell unity to load the current again
                 // by passing the build index of our level
-
+                
 
                 SceneManager.LoadScene(currentLevel.buildIndex);
 

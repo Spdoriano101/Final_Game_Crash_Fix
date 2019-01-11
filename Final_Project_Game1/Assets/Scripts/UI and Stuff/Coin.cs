@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour {
 
     //Setting "AuidoSource" to "Coin_Pickup"
-    public AudioSource Coin_Pickup;
+ 
 
     public Score scoreObject;
 
@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour {
     {
 
         //Asking the program to then retrive the audio source file and apply it to Coin_Pickup
-        Coin_Pickup = GetComponent<AudioSource>();
+        
 
 
     }
@@ -40,7 +40,7 @@ public class Coin : MonoBehaviour {
         if (playerScript)
         {
 
-           Coin_Pickup.Play();
+          
 
 
            Score.scoreValue += 10;
