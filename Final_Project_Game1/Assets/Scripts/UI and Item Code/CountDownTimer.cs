@@ -12,7 +12,7 @@ public class CountDownTimer : MonoBehaviour
     public string sceneToLoad;
 
     float currentTime = 0f;
-    float startingTime = 180f;
+    float startingTime = 260f;
 
     [SerializeField] Text countdownText;
 
