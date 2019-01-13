@@ -72,7 +72,7 @@ public class HighScore : MonoBehaviour {
         //Goes trhough the loop the same amount of times there are visual displays
         for (int i = 0; i < highScoreDisplays.Count; ++i)
         {
-            // Find the specific text and numbers in our list
+            //Find the specific text and numbers in our list
             //and set the text to the numerical score
             highScoreDisplays[i].text = highScoreData[i].ToString();
 
@@ -90,7 +90,7 @@ public class HighScore : MonoBehaviour {
             if (scoreToCheck > highScoreData[i])
             {
                 //Score is higher!
-                //Return to teh calling code that ther is new high score
+                //Return to the calling code that ther is new high score
                 return true;
             }
 

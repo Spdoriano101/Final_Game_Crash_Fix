@@ -16,18 +16,19 @@ public class Winner_Next : MonoBehaviour
         // is the player (aka has a Player script)
         Player playerScript = collision.collider.GetComponent<Player>();
 
-        // Only do somehting if the thing we ran into
+        // Only do somehting if the thing ran into
         // was in fact the player
         // aka playerscript is not null
 
         if (playerScript != null)
         {
 
-            // We DID hit the player!
+            // hit the player!
 
 
 
             // load next level
+
             SceneManager.LoadScene("Winner");
         }
     }

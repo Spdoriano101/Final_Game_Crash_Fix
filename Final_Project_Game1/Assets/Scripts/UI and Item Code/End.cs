@@ -18,7 +18,7 @@ public class End : MonoBehaviour {
     // when our spikes touch any other object
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the thing that we collded with 
+        // Check if the thing that collded with 
         // is the player (aka has a Player script)
         Player playerScript = collision.collider.GetComponent<Player>();
 
@@ -29,7 +29,7 @@ public class End : MonoBehaviour {
         if (playerScript != null)
         {
 
-            // We DID hit the player!
+            // hit the player!
 
             //save the score using our score object reference 
             scoreObject.SaveScore();

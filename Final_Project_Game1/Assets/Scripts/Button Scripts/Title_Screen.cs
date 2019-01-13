@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Title_Screen : MonoBehaviour {
 
-	// Use this for initialization
+	
 	public void startGame () {
 
+        // loads the main menu screen form the help screen
         SceneManager.LoadScene("Start_Menu");
 
     }

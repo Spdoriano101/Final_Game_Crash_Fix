@@ -14,3 +14,5 @@ public class Enemy : MonoBehaviour {
 		
 	}
 }
+
+// This is a placeholder script

@@ -12,9 +12,9 @@ public class Home_Button : MonoBehaviour
     // When the button is clicked
     public void StartGame()
     {
-        //Reset the score
         
-
+        
+        //loads the start menu
         SceneManager.LoadScene("Start_Menu");
     }
 }

@@ -23,7 +23,7 @@ public class Camera_Follow : MonoBehaviour {
     void FixedUpdate()
 
     {
-
+        // Sets the position of the camera to match the screen size and shape
         transform.position = new Vector3(followTarget.position.x, followTarget.position.y, transform.position.z);
 
     }

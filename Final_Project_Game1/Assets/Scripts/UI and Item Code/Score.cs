@@ -34,7 +34,7 @@ public class Score : MonoBehaviour {
 
     public void SaveScore()
     {
-
+        //sets the score value and save the value 
         PlayerPrefs.SetInt("score", scoreValue);
         PlayerPrefs.Save();
     }
