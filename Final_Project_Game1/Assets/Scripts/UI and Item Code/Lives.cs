@@ -14,9 +14,10 @@ public class Lives : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //sets the total lives to 3 at the start of the game 
+        numericalLives = PlayerPrefs.GetInt("Lives2", 3);  
 
-        numericalLives = PlayerPrefs.GetInt("Lives2", 3);    // -- issue with lives for dom, resets back to 3 when the game is restared after he dies from an enemy
-
+        //ties the lives to teh main lives script
         livesText.text = numericalLives.ToString();
     }
 
@@ -28,7 +29,7 @@ public class Lives : MonoBehaviour
 
     public void LoseLife()
     {
-
+        //takes away one life 
         numericalLives = numericalLives - 1;
 
         livesText.text = numericalLives.ToString();
