@@ -6,14 +6,14 @@ using UnityEngine.UI;
 // Extra using statement to allow us to use the scene management functions
 using UnityEngine.SceneManagement;
 
-public class CountDownTimer : MonoBehaviour
+public class CountDownTimer1 : MonoBehaviour
 {
     //Designer Variables
     public string sceneToLoad;
 
     //sets variables to a specific value
     float currentTime = 0f;
-    float startingTime = 260f;
+    float startingTime = 180f;
 
     [SerializeField] Text countdownText;
 
@@ -37,6 +37,7 @@ public class CountDownTimer : MonoBehaviour
         {
 
             currentTime = 0;
+            
 
             // load next level
             SceneManager.LoadScene(sceneToLoad);

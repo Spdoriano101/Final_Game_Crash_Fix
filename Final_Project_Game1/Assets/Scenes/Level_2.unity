@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 590793481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0dea28b234cf0c4cb12779b8f81307a, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f7467baaa7c624cbfa9a2448a17409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Game_Over
@@ -7171,7 +7171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 278.3, y: -19.100006}
+  m_AnchoredPosition: {x: 278.3, y: -15.5}
   m_SizeDelta: {x: 160, y: 30.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424169934
@@ -7828,7 +7828,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 260
+  m_Text: 
 --- !u!222 &1652652718
 CanvasRenderer:
   m_ObjectHideFlags: 0
