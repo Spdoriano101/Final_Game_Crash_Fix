@@ -17,7 +17,7 @@ public class Camera_Follow : MonoBehaviour {
         //store player.transform in follow target 
         followTarget = Player.transform;
 
-        GetComponent<UnityEngine.Camera>().orthographicSize = ((Screen.height / 2) / cameraDistance);
+        //GetComponent<UnityEngine.Camera>().orthographicSize = ((Screen.height / 2) / cameraDistance);
     }
     // Update is called once per frame
     void FixedUpdate()
