@@ -5,18 +5,19 @@ using UnityEngine;
 public class Cross : MonoBehaviour {
 
     //Setting "AuidoSource" to "Coin_Pickup"
-    public AudioSource Coin_Pickup;
+    
 
     public Score scoreObject;
 
     public int crossValue;
 
+    public AudioSource Coin;
     // Use this for initialization
     void Start()
     {
 
         //Asking the program to then retrive the audio source file and apply it to Coin_Pickup
-        Coin_Pickup = GetComponent<AudioSource>();
+        
 
 
     }
@@ -40,7 +41,7 @@ public class Cross : MonoBehaviour {
         if (playerScript)
         {
 
-            Coin_Pickup.Play();
+            Coin.Play();
 
 
             Score.scoreValue += 50;

@@ -15,13 +15,12 @@ public class Player : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string jumpButton = "Jump";
 
-  
-
     public Animator playerAnimator;
     public SpriteRenderer playerSprite;
     public Collider2D playerCollider;
 
     public AudioSource Death;
+    public AudioSource Coins;
 
     public Lives livesObject;
 
@@ -34,8 +33,6 @@ public class Player : MonoBehaviour
             //it says that the characterChoice isn't our character
             Destroy(gameObject);
         }
-
-        Death = GetComponent<AudioSource>();
     }
 
 
@@ -100,10 +97,23 @@ public class Player : MonoBehaviour
 
     }
 
-   
-    
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        if (collision.collider.GetComponent<Coin>())
+   
+        {
+             Coins.Play();
+        }
+
+        if (collision.collider.GetComponent<Cross>())
+
+        {
+            Coins.Play();
+        }
+
         // Check the thing we bump into is an enemy
         if (collision.collider.GetComponent<Enemy>())
         {
@@ -112,6 +122,7 @@ public class Player : MonoBehaviour
             livesObject.saveLives();
 
             Death.Play();
+            
 
 
             //Check if its game over
