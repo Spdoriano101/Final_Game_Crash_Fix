@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Game_Over
-  countdownText: {fileID: 0}
+  countdownText: {fileID: 1307732953}
 --- !u!1 &616906484
 GameObject:
   m_ObjectHideFlags: 0
@@ -8215,7 +8215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 260
+  m_Text: 180
 --- !u!222 &1307732954
 CanvasRenderer:
   m_ObjectHideFlags: 0
