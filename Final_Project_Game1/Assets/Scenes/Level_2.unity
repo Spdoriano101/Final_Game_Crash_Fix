@@ -9208,6 +9208,11 @@ Prefab:
       propertyPath: Coins
       value: 
       objectReference: {fileID: 1438250132}
+    - target: {fileID: 82947002059472282, guid: 8011399900e4a52489c533f3e6524623,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8011399900e4a52489c533f3e6524623, type: 2}
   m_IsPrefabAsset: 0
@@ -9968,7 +9973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6837a5ccee645844f8b128291230c532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreObject: {fileID: 0}
+  scoreObject: {fileID: 1291125821}
   sceneToLoad: Winner
 --- !u!1 &1993740646
 GameObject:
